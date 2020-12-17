@@ -1,0 +1,91 @@
+
+<html>
+
+<head>
+    <title> caculator</title>
+
+    
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+
+</body>
+
+<link rel="stylesheet" type="text/css" href="calculator.css">
+
+
+<!--divison class for  name the table for the calculator-->
+<div class = "heading" >calculator</div> 
+<table > 
+   <tr> 
+      <td colspan="3"><input type="text" id="displaybox"/></td> 
+      
+   <!---label to display the output-->
+      <td colspan="3"><input type="label" id="displaybox2" disabled></td> 
+     
+   </tr> 
+   <tr> 
+      <!--first row -->
+      <!-- display("n") will call function dis to display value -->
+      <td><input type="button" value="1" onclick="display('1')"/> </td> 
+      <td><input type="button" value="2" onclick="display('2')"/> </td> 
+      <td><input type="button" value="3" onclick="display('3')"/> </td> 
+      <td><input type="button" value="/" onclick="display('/')"/> </td> 
+      <!--clr button will clear the values-->
+      <td><input type="button" value="c" onclick="clr()"/> </td> 
+    <!-- backspace will clear each character one at a time using substring methods-->
+      <td><input type="button" value="<-" onclick="backspace()"/></td>
+
+   </tr> 
+
+   <!--second row-->
+
+   <tr> 
+      <td><input type="button" value="4" onclick="display('4')"/> </td> 
+      <td><input type="button" value="5" onclick="display('5')"/> </td> 
+      <td><input type="button" value="6" onclick="display('6')"/> </td> 
+      <td><input type="button" value="-" onclick="display('-')"/> </td> 
+
+   </tr> 
+
+
+   <!--third row-->
+
+
+   <tr> 
+      <td><input type="button" value="7" onclick="display('7')"/> </td> 
+      <td><input type="button" value="8" onclick="display('8')"/> </td> 
+      <td><input type="button" value="9" onclick="display('9')"/> </td> 
+      <td><input type="button" value="+" onclick="display('+')"/> </td> 
+
+   </tr> 
+
+   <!--fourth row-->
+
+   <tr>
+    <td><input type ="button" value ="." onclick ="display('.')"/></td>
+    <td><input type ="button" value ="0" onclick ="display('0')"/></td>
+    
+    
+    <!---buttons used to solve the operation on the operands-->
+    <td><input type ="button" value ="=" onclick ="solve()"/></td>
+    <td><input type ="button" value ="*" onclick ="display('*')"></td>
+
+    <!--button used to enable the scientific operations-->
+    <td><input type ="button" value ="scientific" onclick ="toggle()"></td> 
+
+   </tr>
+    <tr id="sbutton1">
+    <!--- buttons for scientific operation-->
+    <td><input type ="button" value ="sqr" onclick ="square()"/></td>
+    <td><input type ="button" value ="cube" onclick ="cube()"/></td>
+    <td><input type ="button" value ="sqrt" onclick ="squareroot()"/></td>
+ 
+   </tr>
+
+  
+
+
+
+</html>

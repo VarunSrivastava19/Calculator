@@ -1,0 +1,44 @@
+.heading{
+   
+    text-shadow: 1px 1px #f700ff;
+    
+   text-align: center;
+}
+
+
+table {
+        border: purple 4px solid;
+        width: 50%;
+        margin-left: auto; 
+  margin-right: auto;
+      }
+      
+th, td {
+        text-align: left;
+        padding: 4px;
+        column-span: 4px;
+
+      }
+      
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+input[type="button"] 
+         { 
+         background-color:rgb(233, 183, 229); 
+         color: black; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+  
+         input[type="text"] 
+         { 
+         background-color:white; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+
+         input[type="button"]:hover{
+         
+            background-color:rgb(148, 158, 247); 
+
+         }
