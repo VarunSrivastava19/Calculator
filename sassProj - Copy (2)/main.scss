@@ -1,0 +1,80 @@
+@import 'base/variables';
+@import 'modules/button';
+
+//primary class vars
+$prColor: #8bc34a;
+$prStyle: solid;
+$prWidth: 1px;
+//primary class' hover pseudo class vars
+$prWidth_hover: 1px;
+$prColor_hover: #9dce5d;
+//primary class' disabled pseudo class vars
+$prWidth_disabled: 1px;
+$prColor_disabled: #2095f2;
+
+//secondary class vars
+$srColor: #ffffff;
+$srTextCol: #2095f2;
+$srWidth: 1px;
+$srStyle: solid;
+//secondary class' hover pseudo class vars
+$srColor_hover: #2095f2;
+$srTextCol_hover: #ffffff;
+//secondary class' disabled pseudo class vars
+$srColor_disabled: #ffffff;
+$srTextCol_disabled: #999999;
+$srBorCol: #cccccc;
+
+.primary {
+    background-color: $prColor;
+    border: {
+        style: $prStyle;
+        width: $prWidth;
+    };
+}
+
+.primary:hover {
+    background-color: $prColor_hover;
+    border: {
+        style: $prStyle;
+        width: $prWidth_hover;
+    };
+}
+
+.primary:disabled {
+    background-color: $prColor_disabled;
+    border: {
+        style: $prStyle;
+        width: $prWidth_disabled;
+    }
+}
+
+.secondary {
+    background-color: $srColor;
+    color: $srTextCol;
+    border: {
+        style: $srStyle;
+        color: $srColor;
+        width: $srWidth;
+    }    
+}
+
+.secondary:hover {
+    background-color: $srColor_hover;
+    color: $srTextCol_hover;
+    border: {
+        style: $srStyle;
+        color: $srColor_hover;
+        width: $srWidth;
+    }
+}
+
+.secondary:disabled {
+    background-color: $srColor_disabled;
+    color: $srTextCol_disabled;
+    border: {
+        style: $srStyle;
+        color: $srColor_disabled;
+        width: $srWidth;
+    }
+}
